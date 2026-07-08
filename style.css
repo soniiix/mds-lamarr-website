@@ -1,0 +1,22 @@
+.link-dots {
+    position: relative;
+}
+
+.link-dots::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    transform: translateX(-50%) scale(0);
+    width: 14px;
+    height: 6px;
+    background-image:
+        radial-gradient(circle 3px at 3px 3px, #facc15 100%, transparent 0),
+        radial-gradient(circle 3px at 11px 3px, #6d28d9 100%, transparent 0);
+    background-repeat: no-repeat;
+    transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.link-dots:hover::after {
+    transform: translateX(-50%) scale(1);
+}
