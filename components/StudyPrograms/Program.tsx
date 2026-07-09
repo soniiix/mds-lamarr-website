@@ -17,7 +17,7 @@ export default function ProgramCard({
 }: ProgramCardProps) {
     return (
         <article
-            className={`${color} rounded-[24px] p-6 flex flex-col gap-5 w-[380px] flex-shrink-0 snap-start`}
+            className={`${color} rounded-[24px] p-6 flex flex-col gap-5 w-full flex-shrink-0 snap-start`}
         >
             {/* Titre */}
             <h4 className="font-unbounded font-extrabold text-2xl text-ink leading-tight">
@@ -25,7 +25,7 @@ export default function ProgramCard({
             </h4>
 
             {/* Description */}
-            <p className="text-ink/90 text-base leading-relaxed">
+            <p className="text-ink text-base leading-[24px]">
                 {description}
             </p>
 
@@ -34,7 +34,7 @@ export default function ProgramCard({
                 {tags.map((tag, i) => (
                     <div
                         key={i}
-                        className="bg-white/95 rounded-2xl px-5 py-3 text-ink text-sm"
+                        className="bg-[#FCFBFA] rounded-full px-6 py-2.5 text-ink text-sm"
                     >
                         {tag}
                     </div>
@@ -42,8 +42,8 @@ export default function ProgramCard({
             </div>
 
             {/* Image */}
-            <div className="rounded-[16px] overflow-hidden aspect-[4/3] mt-auto">
-                <img src={image} alt="" className="w-full h-full object-cover" />
+            <div className="rounded-[16px] aspect-[4/3]">
+                <img src={image} alt="" className="w-full h-[339px] rounded-[16px] object-cover" />
             </div>
         </article>
     );
