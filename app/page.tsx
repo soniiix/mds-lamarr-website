@@ -3,6 +3,9 @@ import Hero from "@/components/Hero";
 import SideActions from "@/components/SideActions";
 import SocialProof from "@/components/SocialProof";
 import StudyPrograms from "@/components/StudyPrograms/StudyPrograms";
+import Territoire from "@/components/Territoire";
+import News from "@/components/News";
+import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -12,6 +15,9 @@ export default function Home() {
             <Hero />
             <SideActions />
             <StudyPrograms />
+            <Territoire />
+            <News />
+            <Faq />
             <Footer />
             <SocialProof />
         </main>
