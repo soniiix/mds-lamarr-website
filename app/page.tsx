@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import SideActions from "@/components/SideActions";
 import SocialProof from "@/components/SocialProof";
 import StudyPrograms from "@/components/StudyPrograms/StudyPrograms";
+import Footer from "@/components/Footer";
 
 export default function Home() {
     return (
@@ -11,6 +12,7 @@ export default function Home() {
             <Hero />
             <SideActions />
             <StudyPrograms />
+            <Footer />
             <SocialProof />
         </main>
     );
