@@ -19,7 +19,7 @@ const cards = [
 export default function Hero() {
     return (
         <section className="w-full">
-            <div className="max-w-[1289px] mx-auto px-6 py-20 flex flex-col items-center text-center gap-6">
+            <div className="max-w-[1289px] mx-auto px-6 pt-20 pb-2 flex flex-col items-center text-center gap-6">
 
                 {/* Badge */}
                 <div className="inline-flex items-center gap-2.5 border border-[#D1CBDD] rounded-full px-[18px] py-2.5">
