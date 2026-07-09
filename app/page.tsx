@@ -15,11 +15,10 @@ export default function Home() {
             <Hero />
             <SideActions />
             <StudyPrograms />
+            <SocialProof />
             <Territoire />
             <News />
             <Faq />
-            <Footer />
-            <SocialProof />
             <Footer />
         </main>
     );
