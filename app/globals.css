@@ -1,6 +1,151 @@
 @import "tailwindcss";
 
+/* 
+===================================================
+   FONTS
+=================================================== 
+*/
 @theme inline {
-    --font-sans: var(--font-geist-sans);
-    --font-mono: var(--font-geist-mono);
+    --font-unbounded: var(--font-unbounded);
+    --font-outfit: var(--font-outfit);
+    --font-sans: var(--font-outfit);
+}
+
+/* 
+===================================================
+   DESIGN TOKENS
+===================================================
+*/
+@theme {
+    /* ---------- RED - Entrepreneurship (primary) ---------- */
+    --color-primary-50: #ffaabf;
+    --color-primary-100: #ffaabf;
+    --color-primary-200: #f76a8c;
+    --color-primary-300: #f0446f;
+    --color-primary-400: #ee2a5e;
+    --color-primary-500: #ea1958;
+    --color-primary-600: #b20740;
+    --color-primary-700: #860325;
+    --color-primary-800: #6b021d;
+    --color-primary-900: #4a0114;
+    --color-primary: #ea1958;
+
+    /* ---------- GREEN - Tech ---------- */
+    --color-tech-50: #c1f9d8;
+    --color-tech-100: #8ff3bb;
+    --color-tech-200: #51ed9b;
+    --color-tech-300: #38a56c;
+    --color-tech-400: #2e8659;
+    --color-tech-500: #51ed9b;
+    --color-tech-600: #1f5f3e;
+    --color-tech-700: #17492f;
+    --color-tech-800: #103322;
+    --color-tech-900: #0a2116;
+    --color-tech: #51ed9b;
+
+    /* ---------- PURPLE - IA ---------- */
+    --color-ia-50: #e7baff;
+    --color-ia-100: #d387fe;
+    --color-ia-200: #be33ff;
+    --color-ia-300: #8439b0;
+    --color-ia-400: #6a2d8f;
+    --color-ia-500: #be33ff;
+    --color-ia-600: #4c2065;
+    --color-ia-700: #3a1850;
+    --color-ia-800: #28103a;
+    --color-ia-900: #180724;
+    --color-ia: #be33ff;
+
+    /* ---------- BLUE - Structure & Data ---------- */
+    --color-data-50: #98f7ff;
+    --color-data-100: #98f7ff;
+    --color-data-200: #61f3ff;
+    --color-data-300: #44aab2;
+    --color-data-400: #368b92;
+    --color-data-500: #61f3ff;
+    --color-data-600: #276166;
+    --color-data-700: #1e4b4f;
+    --color-data-800: #143338;
+    --color-data-900: #0c2124;
+    --color-data: #61f3ff;
+
+    /* ---------- YELLOW - Creative ---------- */
+    --color-creative-50: #fdf3af;
+    --color-creative-100: #fbea71;
+    --color-creative-200: #f2f128;
+    --color-creative-300: #ae9e04;
+    --color-creative-400: #8a7d03;
+    --color-creative-500: #f2f128;
+    --color-creative-600: #645a03;
+    --color-creative-700: #4c4402;
+    --color-creative-800: #332e01;
+    --color-creative-900: #211e01;
+    --color-creative: #f2f128;
+
+    /* ---------- MAIN PURPLE (ink / texte) ---------- */
+    --color-ink-50: #dcd6e6;
+    --color-ink-100: #b4a8c9;
+    --color-ink-200: #8b79ac;
+    --color-ink-300: #6a5690;
+    --color-ink-400: #4c3a6f;
+    --color-ink-500: #2e1a4a;
+    --color-ink-600: #241239;
+    --color-ink-700: #180733;
+    --color-ink-800: #160833;
+    --color-ink-900: #100522;
+    --color-ink-950: #0a0316;
+    --color-ink: #180733;
+
+    /* ---------- DARK BACKGROUND ---------- */
+    --color-background-dark: #160833;
+
+    /* ---------- CREAM WHITE ---------- */
+    --color-cream-50: #faf8f5;
+    --color-cream-100: #f2ede6;
+    --color-cream-200: #e6ddd0;
+    --color-cream-300: #cabfae;
+    --color-cream-400: #b0a48e;
+    --color-cream-500: #96896f;
+
+    /* 
+    ===================================================
+        TYPOGRAPHY
+    ===================================================
+    */
+    --text-xs: 0.75rem; /* 12px */
+    --text-sm: 0.875rem; /* 14px */
+    --text-base: 1rem; /* 16px */
+    --text-lg: 1.125rem; /* 18px */
+    --text-xl: 1.25rem; /* 20px */
+    --text-2xl: 1.5rem; /* 24px */
+    --text-3xl: 1.875rem; /* 30px */
+    --text-4xl: 2.25rem; /* 36px */
+    --text-5xl: 3rem; /* 48px */
+    --text-6xl: 3.75rem; /* 60px */
+    --text-7xl: 4.5rem; /* 72px */
+    --text-8xl: 6rem; /* 96px */
+    --text-9xl: 8rem; /* 128px */
+
+    /* 
+    ===================================================
+        SPACING
+    ===================================================
+    */
+    --spacing-px:  1px;
+    --spacing-0\.5: 0.125rem;   /* 2px */
+    --spacing-1:   0.25rem;     /* 4px */
+    --spacing-1\.5: 0.375rem;   /* 6px */
+    --spacing-2:   0.5rem;      /* 8px */
+    --spacing-2\.5: 0.625rem;   /* 10px */
+    --spacing-3:   0.75rem;     /* 12px */
+    --spacing-4:   1rem;        /* 16px */
+    --spacing-5:   1.25rem;     /* 20px */
+    --spacing-6:   1.5rem;      /* 24px */
+    --spacing-8:   2rem;        /* 32px */
+    --spacing-10:  2.5rem;      /* 40px */
+    --spacing-12:  3rem;        /* 48px */
+    --spacing-14:  3.5rem;      /* 56px */
+    --spacing-16:  4rem;        /* 64px */
+    --spacing-20:  5rem;        /* 80px */
+    --spacing-24:  6rem;        /* 96px */
 }
