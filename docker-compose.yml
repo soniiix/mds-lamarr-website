@@ -1,0 +1,13 @@
+services:
+  front:
+    image: ghcr.io/soniiix/mds-lamarr-website:latest
+    container_name: lamarr-web
+    restart: unless-stopped
+    ports:
+      - "40430:40430"
+    networks:
+      - lamarr-network
+
+networks:
+  lamarr-network:
+    driver: bridge
