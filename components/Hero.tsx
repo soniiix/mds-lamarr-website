@@ -1,3 +1,20 @@
+import Image from "next/image";
+
+/**
+ * Bande « filières » : des polaroïds suspendus à une ficelle ondulée.
+ *
+ * Chaque image (public/images) est un SVG complet : étiquette colorée, cadre,
+ * photo ET libellé sont déjà intégrés. On les place simplement le long de la ficelle.
+ *
+ * Ordre gauche → droite (couleurs d'étiquette) : vert, cyan, rose, violet, jaune.
+ */
+const cards = [
+    { src: "/images/Hero4v3.svg", width: 312, height: 320, label: "Ingénierie Logicielle & Développement", cx: 200, top: 48 },
+    { src: "/images/Hero5.svg", width: 294, height: 314, label: "Technologies Génératives & Data Science", cx: 500, top: 96 },
+    { src: "/images/Hero1.svg", width: 274, height: 283, label: "Direction Stratégique & Innovation", cx: 800, top: 120 },
+    { src: "/images/Hero2.svg", width: 294, height: 302, label: "Infrastructures & Cybersécurité", cx: 1100, top: 96 },
+    { src: "/images/Hero3.svg", width: 273, height: 331, label: "UX/UI Design & Direction Artistique", cx: 1400, top: 52 },
+];
 
 export default function Hero() {
     return (
@@ -33,6 +50,48 @@ export default function Hero() {
                     </a>
                 </div>
 
+            </div>
+
+            {/* Bande de filières */}
+            <div className="w-full overflow-hidden bg-[#FAF7F2]">
+                <div className="flex justify-center">
+                    <div className="relative h-[470px] w-[1600px] shrink-0">
+
+                        {/* Ficelle ondulée qui relie les étiquettes */}
+                        <svg
+                            className="absolute inset-0 z-0 h-full w-full"
+                            viewBox="0 0 1600 470"
+                            fill="none"
+                            preserveAspectRatio="none"
+                        >
+                            <path
+                                d="M -40 25 C 500 175, 1100 175, 1680 25"
+                                stroke="#C9C2D6"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                            />
+                        </svg>
+
+                        {/* Cartes — SVG complets (étiquette + photo + libellé déjà intégrés) */}
+                        {cards.map((c) => (
+                            <div
+                                key={c.src}
+                                className="absolute z-10 -translate-x-1/2"
+                                style={{ left: c.cx, top: c.top, width: c.width }}
+                            >
+                                <Image
+                                    src={c.src}
+                                    width={c.width}
+                                    height={c.height}
+                                    alt={c.label}
+                                    priority
+                                    className="h-auto w-full drop-shadow-[0_18px_30px_rgba(24,7,51,0.10)]"
+                                />
+                            </div>
+                        ))}
+
+                    </div>
+                </div>
             </div>
         </section>
     );
