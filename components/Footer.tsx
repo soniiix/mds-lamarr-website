@@ -114,10 +114,10 @@ export default function Footer() {
                 </div>
 
                 {/* Barre copyright */}
-                <div className="mt-4 flex flex-wrap items-center justify-center gap-x-8 gap-y-2 rounded-[32px] bg-primary-500 px-8 py-4 text-center text-white">
-                    <span className="font-semibold">© 2026 Lamarr · Enseignement supérieur privé</span>
+                <div className="mt-4 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 rounded-[32px] bg-primary-500 px-8 py-4 text-center text-sm text-white">
+                    <span className="font-medium font-unbounded">© 2026 Lamarr · Enseignement supérieur privé</span>
                     {legalLinks.map((link) => (
-                        <a key={link} href="#" className="font-semibold underline underline-offset-4 transition hover:text-ink">
+                        <a key={link} href="#" className="font-medium font-unbounded underline underline-offset-4 transition hover:text-ink/90 duration-300">
                             {link}
                         </a>
                     ))}

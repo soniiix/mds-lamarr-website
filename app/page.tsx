@@ -12,8 +12,8 @@ export default function Home() {
             <Hero />
             <SideActions />
             <StudyPrograms />
-            <Footer />
             <SocialProof />
+            <Footer />
         </main>
     );
 }
