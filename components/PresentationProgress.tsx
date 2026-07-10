@@ -42,8 +42,8 @@ export default function PresentationProgress({ sectionIds }: PresentationProgres
     }, [sectionIds]);
 
     return (
-        <div className="hidden lg:flex lg:items-stretch lg:justify-center">
-            <div className="relative h-full min-h-full w-6">
+        <div className="hidden lg:flex lg:justify-center lg:sticky lg:top-6 lg:self-start">
+            <div className="relative h-[calc(100vh-7rem)] w-6">
                 <div className="absolute left-1/2 top-0 h-full w-px -translate-x-1/2 rounded-full bg-ink/10" />
                 <div
                     className="absolute left-1/2 top-0 w-px -translate-x-1/2 rounded-full bg-primary-500 transition-[height] duration-300 ease-out"
