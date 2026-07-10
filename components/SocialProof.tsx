@@ -31,7 +31,7 @@ export default function SocialProof() {
                     </div>
 
                     {/* Carte 100% — rangée du bas, tout à gauche */}
-                    <div className="rounded-[32px] bg-ink p-8 text-white lg:col-span-4 lg:col-start-1 lg:row-start-2">
+                    <div className="rounded-[32px] bg-ink p-8 text-white lg:col-span-4 lg:col-start-1 lg:row-start-2 lg:self-stretch">
                         <p className="mb-2.5 font-unbounded text-6xl font-extrabold leading-none lg:text-7xl">100%</p>
                         <p className="text-lg leading-[24px] text-[#FAF7F2]">
                             Des parcours de spécialisation accessibles sous contrat d'apprentissage ou de professionnalisation.
@@ -39,7 +39,7 @@ export default function SocialProof() {
                     </div>
 
                     {/* Carte 500+ — rangée du bas, à droite de 100% */}
-                    <div className="rounded-[32px] bg-primary-500 p-8 text-white lg:col-span-4 lg:col-start-5 lg:row-start-2">
+                    <div className="rounded-[32px] bg-primary-500 p-8 text-white lg:col-span-4 lg:col-start-5 lg:row-start-2 lg:self-stretch">
                         <p className="mb-2.5 font-unbounded text-6xl font-extrabold leading-none lg:text-7xl">500+</p>
                         <p className="text-lg leading-[24px] text-[#FAF7F2]">
                             Entreprises partenaires (structures technologiques, agences et grands groupes) en relation directe avec notre cellule de placement.
