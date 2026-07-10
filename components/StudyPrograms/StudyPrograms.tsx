@@ -106,7 +106,7 @@ export default function StudyPrograms() {
                                 image={p.image}
                             />
                             <Link
-                                href="#"
+                                href="/presentation"
                                 className={`${p.color} w-full text-center rounded-full px-6 py-3 text-base font-medium text-ink transition hover:opacity-90 cursor-pointer`}
                             >
                                 Découvrir ce programme
