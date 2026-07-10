@@ -31,7 +31,7 @@ export default function Accordion({
                             type="button"
                             onClick={() => setOpen(isOpen ? null : i)}
                             aria-expanded={isOpen}
-                            className={`flex w-full items-center justify-between gap-4 text-left ${variant === "card" ? "px-5 py-4" : "py-5"}`}
+                            className={`flex w-full items-center justify-between gap-4 text-left cursor-pointer ${variant === "card" ? "px-5 py-4" : "py-5"}`}
                         >
                             <span className="text-ink">{item.q}</span>
                             <svg

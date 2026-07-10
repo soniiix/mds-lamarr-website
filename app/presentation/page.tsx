@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SideActions from "@/components/SideActions";
 import Accordion from "@/components/Accordion";
+import PresentationProgress from "../../components/PresentationProgress";
 
 const navItems = [
     { label: "Présentation", href: "#presentation" },
@@ -12,6 +13,8 @@ const navItems = [
     { label: "Où suivre cette formation ?", href: "#ou-suivre" },
     { label: "FAQ", href: "#faq" },
 ];
+
+const sectionIds = ["presentation", "admission", "programme", "debouches", "ou-suivre", "faq"];
 
 const atouts = [
     "Alternance sur les deux années",
@@ -58,7 +61,7 @@ export default function PresentationPage() {
             <Header />
 
             {/* Bannière */}
-            <div className="w-full bg-primary-500 px-6 py-10 text-center">
+            <div className="w-full bg-primary-500 px-6 py-10 mt-6 text-center">
                 <h1 className="font-unbounded text-3xl font-extrabold text-white md:text-4xl">
                     MBA UX/UI Design &amp; Product Design
                 </h1>
@@ -66,7 +69,7 @@ export default function PresentationPage() {
 
             <main className="w-full bg-[#FAF7F2]">
                 <div className="mx-auto max-w-[1200px] px-6 py-12 lg:py-16">
-                    <div className="grid grid-cols-1 gap-10 lg:grid-cols-[260px_1fr] lg:gap-14">
+                    <div className="grid grid-cols-1 gap-10 lg:grid-cols-[260px_24px_1fr] lg:gap-8">
 
                         {/* Sidebar */}
                         <aside className="flex flex-col gap-6 lg:sticky lg:top-6 lg:self-start">
@@ -75,7 +78,7 @@ export default function PresentationPage() {
                                     <a
                                         key={item.href}
                                         href={item.href}
-                                        className={`rounded-lg px-4 py-3 text-sm transition ${
+                                        className={`rounded-tl-[16px] px-4 py-3 text-sm transition ${
                                             i === 0
                                                 ? "bg-ink text-white"
                                                 : "bg-primary-500/10 text-ink hover:bg-primary-500/20"
@@ -92,12 +95,14 @@ export default function PresentationPage() {
                             </div>
                         </aside>
 
+                        <PresentationProgress sectionIds={sectionIds} />
+
                         {/* Contenu */}
                         <div className="flex flex-col gap-16">
 
                             {/* Présentation */}
                             <section id="presentation" className="flex scroll-mt-24 flex-col gap-6">
-                                <h2 className="text-center font-unbounded text-2xl font-extrabold text-primary-500">Présentation</h2>
+                                <h2 className="text-center font-unbounded text-[30px] leading-[36px] font-extrabold">Présentation</h2>
 
                                 <div className="grid gap-4 md:grid-cols-[2fr_1fr]">
                                     <div className="flex flex-col gap-4 rounded-2xl bg-ink p-6 text-white">
