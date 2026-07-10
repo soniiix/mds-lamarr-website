@@ -47,8 +47,8 @@ export default function Accordion({
                             </svg>
                         </button>
                         {item.a && (
-                            <div className={`grid transition-all duration-300 ${isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}>
-                                <p className={`overflow-hidden text-sm leading-[1.5] text-ink/70 ${variant === "card" ? "px-5 pb-4" : "pb-5"}`}>
+                            <div className={`overflow-hidden transition-all duration-300 ${isOpen ? "max-h-96" : "max-h-0"}`}>
+                                <p className={`text-sm leading-[1.5] text-ink/70 ${variant === "card" ? "px-5 pb-4" : "pb-5"}`}>
                                     {item.a}
                                 </p>
                             </div>

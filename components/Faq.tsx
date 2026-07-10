@@ -74,9 +74,9 @@ export default function Faq() {
                                     </svg>
                                 </button>
                                 <div
-                                    className={`grid transition-all duration-300 ${isOpen ? "grid-rows-[1fr] pb-6" : "grid-rows-[0fr]"}`}
+                                    className={`overflow-hidden transition-all duration-300 ${isOpen ? "max-h-96 pb-6" : "max-h-0"}`}
                                 >
-                                    <p className="overflow-hidden text-base leading-[1.5] text-ink/70">{f.a}</p>
+                                    <p className="text-base leading-[1.5] text-ink/70">{f.a}</p>
                                 </div>
                             </div>
                         );
