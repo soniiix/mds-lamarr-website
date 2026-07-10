@@ -4,13 +4,13 @@ export default function Header() {
     return (
         <header className="w-full">
             <nav className="mx-auto px-6 lg:px-10 pt-6 flex items-center justify-center gap-24">
-                <Link href="#" className="flex-shrink-0">
+                <Link href="/" className="flex-shrink-0">
                     <img src="/lamarr-logo.png" alt="Lamarr" className="h-7 w-auto" />
                 </Link>
 
                 <div className="hidden xl:flex items-center gap-8">
-                    <Link href="#" className="text-[18px] leading-6 tracking-normal font-normal text-primary-500">Accueil</Link>
-                    <Link href="#" className="text-[18px] leading-6 tracking-normal font-normal text-ink hover:text-primary-500 transition">Formations</Link>
+                    <Link href="/" className="text-[18px] leading-6 tracking-normal font-normal text-primary-500">Accueil</Link>
+                    <Link href="presentation" className="text-[18px] leading-6 tracking-normal font-normal text-ink hover:text-primary-500 transition">Formations</Link>
                     <Link href="#" className="text-[18px] leading-6 tracking-normal font-normal text-ink hover:text-primary-500 transition">Alternance</Link>
                     <Link href="#" className="text-[18px] leading-6 tracking-normal font-normal text-ink hover:text-primary-500 transition">Admissions</Link>
                     <Link href="#" className="text-[18px] leading-6 tracking-normal font-normal text-ink hover:text-primary-500 transition">À propos de l'école</Link>
