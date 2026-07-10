@@ -11,17 +11,17 @@ export default function Header() {
                 <div className="hidden xl:flex items-center gap-8">
                     <Link href="/" className="text-[18px] leading-6 tracking-normal font-normal text-primary-500">Accueil</Link>
                     <Link href="presentation" className="text-[18px] leading-6 tracking-normal font-normal text-ink hover:text-primary-500 transition">Formations</Link>
-                    <Link href="#" className="text-[18px] leading-6 tracking-normal font-normal text-ink hover:text-primary-500 transition">Alternance</Link>
-                    <Link href="#" className="text-[18px] leading-6 tracking-normal font-normal text-ink hover:text-primary-500 transition">Admissions</Link>
-                    <Link href="#" className="text-[18px] leading-6 tracking-normal font-normal text-ink hover:text-primary-500 transition">À propos de l'école</Link>
-                    <Link href="#" className="text-[18px] leading-6 tracking-normal font-normal text-ink hover:text-primary-500 transition">Contact</Link>
+                    <Link href="/en-construction" className="text-[18px] leading-6 tracking-normal font-normal text-ink hover:text-primary-500 transition">Alternance</Link>
+                    <Link href="/en-construction" className="text-[18px] leading-6 tracking-normal font-normal text-ink hover:text-primary-500 transition">Admissions</Link>
+                    <Link href="/en-construction" className="text-[18px] leading-6 tracking-normal font-normal text-ink hover:text-primary-500 transition">À propos de l'école</Link>
+                    <Link href="/en-construction" className="text-[18px] leading-6 tracking-normal font-normal text-ink hover:text-primary-500 transition">Contact</Link>
                 </div>
 
                 <div className="hidden lg:flex items-center gap-2.5 flex-shrink-0">
-                    <Link href="#" className="px-4 py-2.5 rounded-[32px] text-[18px] leading-6 bg-primary-500 text-white hover:bg-primary-600 transition">
+                    <Link href="/en-construction" className="px-4 py-2.5 rounded-[32px] text-[18px] leading-6 bg-primary-500 text-white hover:bg-primary-600 transition">
                         Portes ouvertes
                     </Link>
-                    <Link href="#" className="px-4 py-2.5 rounded-[32px] text-[18px] leading-6 border border-primary-500 hover:bg-primary-500 hover:text-white transition duration-300">
+                    <Link href="/en-construction" className="px-4 py-2.5 rounded-[32px] text-[18px] leading-6 border border-primary-500 hover:bg-primary-500 hover:text-white transition duration-300">
                         Candidater
                     </Link>
                 </div>

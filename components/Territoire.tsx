@@ -36,7 +36,7 @@ export default function Territoire() {
                         L'école déploie ses campus au cœur des grandes métropoles numériques françaises, garantissant une proximité immédiate avec les bassins d'emploi régionaux et les écosystèmes d'innovation locaux.
                     </p>
                     <Link
-                        href="#"
+                        href="/en-construction"
                         className="mt-2 self-start rounded-[32px] bg-ink px-6 py-4 text-lg text-white transition hover:bg-ink-600"
                     >
                         Prendre contact

@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import SideActions from "@/components/SideActions";
 import Accordion from "@/components/Accordion";
 import PresentationProgress from "../../components/PresentationProgress";
+import Link from "next/link";
 
 const navItems = [
     { label: "Présentation", href: "#presentation" },
@@ -89,9 +90,9 @@ export default function PresentationPage() {
                                 ))}
                             </nav>
                             <div className="flex flex-col gap-3">
-                                <a href="#" className="rounded-full bg-ink px-6 py-3 text-center text-white transition hover:bg-ink-600">Candidater</a>
-                                <a href="#" className="rounded-full bg-primary-500 px-6 py-3 text-center text-white transition hover:bg-primary-600">Télécharger la brochure</a>
-                                <a href="#" className="rounded-full border border-ink px-6 py-3 text-center text-ink transition hover:bg-ink hover:text-white">Portes ouvertes</a>
+                                <Link href="/en-construction" className="rounded-full bg-ink px-6 py-3 text-center text-white transition hover:bg-ink-600">Candidater</Link>
+                                <Link href="/en-construction" className="rounded-full bg-primary-500 px-6 py-3 text-center text-white transition hover:bg-primary-600">Télécharger la brochure</Link>
+                                <Link href="/en-construction" className="rounded-full border border-ink px-6 py-3 text-center text-ink transition hover:bg-ink hover:text-white">Portes ouvertes</Link>
                             </div>
                         </aside>
 
@@ -109,8 +110,8 @@ export default function PresentationPage() {
                                         <p className="text-sm leading-relaxed text-white/90">
                                             Le MBA Lead UX/UI Designer (Bac+5) t'apporte en 2 ans un socle solide en expérience utilisateur, design d'interface, ergonomie, conception centrée utilisateur et pilotage de projets UX/UI. À travers des projets concrets et une immersion en entreprise, tu développes une expertise avancée pour concevoir des interfaces digitales efficaces.
                                         </p>
-                                        <a href="#" className="rounded-full bg-primary-500 py-3 text-center text-sm text-white transition hover:bg-primary-600">Télécharger la brochure</a>
-                                        <a href="#" className="rounded-full border border-white/30 py-3 text-center text-sm text-white transition hover:bg-white/10">Portes ouvertes</a>
+                                        <Link href="/en-construction" className="rounded-full bg-primary-500 py-3 text-center text-sm text-white transition hover:bg-primary-600">Télécharger la brochure</Link>
+                                        <Link href="/en-construction" className="rounded-full border border-white/30 py-3 text-center text-sm text-white transition hover:bg-white/10">Portes ouvertes</Link>
                                     </div>
                                     <div className="flex flex-col justify-center gap-4 rounded-2xl bg-primary-500 p-6 text-white">
                                         <div className="flex items-start gap-3 text-sm"><Check />Pré-requis : Bac + 3</div>

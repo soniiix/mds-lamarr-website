@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 /**
  * Bande « photos » du footer : des polaroïds paysage suspendus à une ficelle.
@@ -101,9 +102,9 @@ export default function Footer() {
                                         {col.links.map((link) => (
                                             <li key={link} className="flex items-center gap-2 text-white/90">
                                                 <span className="text-white/50">•</span>
-                                                <a href="#" className="underline underline-offset-4 decoration-white/40 transition hover:text-primary-500 hover:decoration-primary-500">
+                                                <Link href="/en-construction" className="underline underline-offset-4 decoration-white/40 transition hover:text-primary-500 hover:decoration-primary-500">
                                                     {link}
-                                                </a>
+                                                </Link>
                                             </li>
                                         ))}
                                     </ul>
@@ -117,9 +118,9 @@ export default function Footer() {
                 <div className="mt-4 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 rounded-[32px] bg-primary-500 px-8 py-4 text-center text-sm text-white">
                     <span className="font-medium font-unbounded">© 2026 Lamarr · Enseignement supérieur privé</span>
                     {legalLinks.map((link) => (
-                        <a key={link} href="#" className="font-medium font-unbounded underline underline-offset-4 transition hover:text-ink/90 duration-300">
+                        <Link key={link} href="/en-construction" className="font-medium font-unbounded underline underline-offset-4 transition hover:text-ink/90 duration-300">
                             {link}
-                        </a>
+                        </Link>
                     ))}
                 </div>
             </div>

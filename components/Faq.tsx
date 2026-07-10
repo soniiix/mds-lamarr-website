@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 
 const faqs = [
@@ -40,12 +41,12 @@ export default function Faq() {
                     <p className="text-lg leading-[24px] text-ink/80">
                         Le processus d'admission, le rythme d'alternance et le cadre pédagogique : trouvez les réponses factuelles aux questions les plus posées pour finaliser la construction de votre parcours.
                     </p>
-                    <a
-                        href="#"
+                    <Link
+                        href="/en-construction"
                         className="self-start rounded-[32px] bg-ink px-6 py-4 text-lg text-white transition hover:bg-ink-500"
                     >
                         Prendre contact
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Colonne droite : accordéon */}

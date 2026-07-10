@@ -20,7 +20,7 @@ export default function SideActions() {
 
             {/* Portes ouvertes */}
             <Link
-                href="#"
+                href="/en-construction"
                 aria-label="Portes ouvertes"
                 className="flex items-center justify-center w-14 h-14 bg-primary-500 text-white rounded-tl-2xl pl-1 hover:bg-primary-600 transition"
                 title="Portes ouvertes"
@@ -32,7 +32,7 @@ export default function SideActions() {
 
             {/* Candidater */}
             <Link
-                href="#"
+                href="/en-construction"
                 aria-label="Candidater"
                 className="flex items-center justify-center w-14 h-14 bg-primary-500 text-white rounded-tl-2xl pl-1 hover:bg-primary-600 transition"
                 title="Candidater"
