@@ -36,10 +36,10 @@ const smallCards = [
 export default function News() {
     return (
         <section className="w-full bg-ink">
-            <div className="mx-auto max-w-[1280px] px-6 py-20 lg:px-10">
+            <div className="mx-auto max-w-[1440px] px-6 py-20 lg:px-10">
 
                 {/* Titre */}
-                <h2 className="mb-10 font-unbounded text-[32px] font-extrabold leading-tight">
+                <h2 className="mb-7.5 font-unbounded text-[30px] font-extrabold leading-[36px] whitespace-nowrap">
                     <span className="text-white">Actualités &amp; vie de </span>
                     <span className="text-primary-500">campus</span>
                 </h2>
@@ -47,22 +47,19 @@ export default function News() {
                 <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
 
                     {/* Grande carte */}
-                    <article className="flex flex-col gap-4 rounded-[24px] bg-white p-5">
+                    <article className="flex flex-col gap-4 rounded-[24px] bg-white p-5 cursor-pointer">
                         <div className="overflow-hidden rounded-[16px]">
                             <Image src="/images/Article1.svg" width={608} height={451} alt="Sora" className="h-auto w-full" />
                         </div>
                         <Badge />
                         <h3 className="text-2xl font-medium text-ink">Sora n'a pas survécu à son propre succès</h3>
-                        <p className="text-base leading-[1.5] text-ink/60">
-                            En septembre 2025, OpenAI lance Sora avec de grosses ambitions : révolutionner la création vidéo grâce à l'IA. À peine six mois plus tard, l…
-                        </p>
                         <ReadMore />
                     </article>
 
                     {/* Colonne droite */}
                     <div className="flex flex-col gap-6">
                         {smallCards.map((card) => (
-                            <article key={card.title} className="flex items-center gap-5 rounded-[24px] bg-white p-4">
+                            <article key={card.title} className="flex items-center gap-5 rounded-[24px] bg-white px-4 py-6 cursor-pointer">
                                 <Image src={card.img} width={card.w} height={card.h} alt="" className="h-[150px] w-[180px] shrink-0 rounded-[14px] object-cover" />
                                 <div className="flex flex-1 min-w-0 flex-col gap-3">
                                     <Badge />

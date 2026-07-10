@@ -1,6 +1,6 @@
 export default function SocialProof() {
     return (
-        <section className="w-full py-16 lg:py-24">
+        <section className="w-full py-16 lg:pt-20 lg:pb-12">
             <div className="max-w-[1289px] mx-auto px-6">
 
                 {/* Grille bento : 12 colonnes */}
@@ -36,7 +36,7 @@ export default function SocialProof() {
                     </div>
 
                     {/* Carte 100% — tout à gauche, rangée du bas */}
-                    <div className="lg:col-start-1 lg:col-span-4 lg:row-start-2 bg-ink text-white rounded-[32px] p-8">
+                    <div className="lg:col-start-1 lg:col-span-6 lg:row-start-2 bg-ink text-white rounded-[32px] p-8">
                         <p className="font-unbounded font-extrabold text-5xl lg:text-7xl leading-none mb-2.5">
                             100%
                         </p>
@@ -47,7 +47,7 @@ export default function SocialProof() {
                     </div>
 
                     {/* Carte 500+ — à droite de 100%, rangée du bas, décalée */}
-                    <div className="lg:col-start-5 lg:col-span-4 lg:row-start-2 bg-primary-500 text-white rounded-[32px] p-8">
+                    <div className="lg:col-start-7 lg:col-span-6 lg:row-start-2 bg-primary-500 text-white rounded-[32px] p-8">
                         <p className="font-unbounded font-extrabold text-5xl lg:text-7xl leading-none mb-2.5">
                             500+
                         </p>

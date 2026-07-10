@@ -30,20 +30,19 @@ export default function Faq() {
 
     return (
         <section className="w-full">
-            <div className="mx-auto grid max-w-[1440px] grid-cols-1 gap-12 px-6 py-20 lg:grid-cols-2 lg:gap-20 lg:px-10">
+            <div className="mx-auto grid max-w-[1440px] grid-cols-1 gap-12 px-6 pt-20 pb-10 lg:grid-cols-2 lg:gap-20 lg:px-10">
 
                 {/* Colonne gauche */}
-                <div className="flex max-w-[600px] flex-col gap-6">
-                    <h2 className="font-unbounded text-[40px] font-extrabold leading-[1.15]">
-                        <span className="text-ink">On répond à vos </span>
-                        <span className="text-primary-500">questions</span>
+                <div className="flex max-w-[600px] flex-col gap-4.5">
+                    <h2 className="font-unbounded text-[30px] font-extrabold leading-[36px] whitespace-nowrap">
+                        On répond à vos <span className="text-primary-500">questions</span>
                     </h2>
-                    <p className="text-lg leading-[1.5] text-ink/80">
+                    <p className="text-lg leading-[24px] text-ink/80">
                         Le processus d'admission, le rythme d'alternance et le cadre pédagogique : trouvez les réponses factuelles aux questions les plus posées pour finaliser la construction de votre parcours.
                     </p>
                     <a
                         href="#"
-                        className="mt-2 self-start rounded-[32px] bg-ink px-8 py-4 text-lg text-white transition hover:bg-ink-600"
+                        className="self-start rounded-[32px] bg-ink px-6 py-4 text-lg text-white transition hover:bg-ink-500"
                     >
                         Prendre contact
                     </a>
@@ -59,7 +58,7 @@ export default function Faq() {
                                     type="button"
                                     onClick={() => setOpen(isOpen ? null : i)}
                                     aria-expanded={isOpen}
-                                    className="flex w-full items-center justify-between gap-6 py-6 text-left"
+                                    className="flex w-full items-center justify-between gap-6 py-6 text-left cursor-pointer"
                                 >
                                     <span className="text-lg text-ink/85">{f.q}</span>
                                     <svg
