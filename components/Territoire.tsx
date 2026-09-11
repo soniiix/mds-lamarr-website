@@ -29,7 +29,7 @@ export default function Territoire() {
 
                 {/* Texte */}
                 <div className="flex max-w-[640px] flex-col gap-4.5">
-                    <h2 className="font-unbounded text-[46px] font-extrabold leading-[1.1] lg:text-3xl whitespace-nowrap">
+                    <h2 className="font-unbounded text-[46px] font-extrabold leading-[1.1] lg:text-3xl sm:whitespace-nowrap">
                         Un réseau ancré sur le <span className="text-primary-500">territoire</span>
                     </h2>
                     <p className="text-lg leading-[1.5] text-ink/80">

@@ -40,7 +40,7 @@ export default function News() {
             <div className="mx-auto max-w-[1440px] px-6 py-20 lg:px-10">
 
                 {/* Titre */}
-                <h2 className="mb-7.5 font-unbounded text-[30px] font-extrabold leading-[36px] whitespace-nowrap">
+                <h2 className="mb-7.5 font-unbounded text-[30px] font-extrabold leading-[36px] sm:whitespace-nowrap">
                     <span className="text-white">Actualités &amp; vie de </span>
                     <span className="text-primary-500">campus</span>
                 </h2>

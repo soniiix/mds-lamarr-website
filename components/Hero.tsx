@@ -31,7 +31,7 @@ export default function Hero() {
                 </div>
 
                 {/* Titre */}
-                <h1 className="font-unbounded font-extrabold uppercase text-[60px] leading-[60px]">
+                <h1 className="font-unbounded font-extrabold uppercase text-[40px] leading-[48px] min-[550px]:text-[60px] min-[550px]:leading-[62px]">
                     <span className="text-ink">L'école des métiers du </span>
                     <span className="text-primary-500">Numérique</span>
                 </h1>

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function SideActions() {
     return (
-        <div className="fixed right-6 top-1/2 z-50 hidden -translate-y-1/2 flex-col gap-1 min-[700px]:flex">
+        <div className="fixed right-0 top-1/2 z-50 hidden -translate-y-1/2 flex-col gap-1 min-[700px]:flex">
 
             {/* Télécharger */}
             <Link

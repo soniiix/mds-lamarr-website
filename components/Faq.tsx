@@ -35,7 +35,7 @@ export default function Faq() {
 
                 {/* Colonne gauche */}
                 <div className="flex max-w-[600px] flex-col gap-4.5">
-                    <h2 className="font-unbounded text-[30px] font-extrabold leading-[36px] whitespace-nowrap">
+                    <h2 className="font-unbounded text-[30px] font-extrabold leading-[36px]">
                         On répond à vos <span className="text-primary-500">questions</span>
                     </h2>
                     <p className="text-lg leading-[24px] text-ink/80">

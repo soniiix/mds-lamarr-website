@@ -12,7 +12,7 @@ export default function UnderConstruction() {
                 </div>
 
                 {/* Titre */}
-                <h1 className="font-unbounded font-extrabold uppercase text-4xl md:text-5xl lg:text-6xl leading-[1.05] whitespace-nowrap">
+                <h1 className="font-unbounded font-extrabold uppercase text-4xl md:text-5xl lg:text-6xl leading-[1.05] sm:whitespace-nowrap">
                     <span className="text-ink">Bientôt </span>
                     <span className="text-primary-500">disponible</span>
                 </h1>

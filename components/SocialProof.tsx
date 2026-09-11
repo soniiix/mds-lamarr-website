@@ -16,7 +16,7 @@ export default function SocialProof() {
 
                     {/* Bloc texte — en haut à droite */}
                     <div className="flex flex-col gap-5 lg:col-span-6 lg:col-start-7 lg:row-start-1">
-                        <h2 className="font-unbounded text-3xl font-extrabold lg:whitespace-nowrap">
+                        <h2 className="font-unbounded text-3xl font-extrabold sm:whitespace-nowrap">
                             L'immersion par <span className="text-primary-500">l'alternance</span>
                         </h2>
                         <p className="text-lg leading-[24px] text-ink">
