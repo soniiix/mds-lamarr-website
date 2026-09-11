@@ -43,7 +43,7 @@ export default function Faq() {
                     </p>
                     <Link
                         href="/en-construction"
-                        className="self-start rounded-[32px] bg-ink px-6 py-4 text-lg text-white transition hover:bg-ink-500"
+                        className="self-start rounded-[32px] bg-ink px-6 py-3 mt-1.5 text-lg text-white transition hover:bg-ink-500"
                     >
                         Prendre contact
                     </Link>

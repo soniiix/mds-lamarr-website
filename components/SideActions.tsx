@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function SideActions() {
     return (
-        < div className="fixed right-0 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-1" >
+        <div className="fixed right-6 top-1/2 z-50 hidden -translate-y-1/2 flex-col gap-1 min-[700px]:flex">
 
             {/* Télécharger */}
             <Link
@@ -41,6 +41,6 @@ export default function SideActions() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                 </svg>
             </Link>
-        </div >
+        </div>
     );
 }   

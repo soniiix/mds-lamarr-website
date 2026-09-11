@@ -70,7 +70,7 @@ export default function StudyPrograms() {
                             </svg>
                         </div>
                     ))}
-                    <button className="bg-primary-500 text-white px-6 py-4 rounded-full hover:bg-primary-600 transition whitespace-nowrap cursor-pointer">
+                    <button className="bg-primary-500 text-white px-6 py-3 rounded-full hover:bg-primary-600 transition whitespace-nowrap cursor-pointer">
                         Rechercher
                     </button>
                 </div>

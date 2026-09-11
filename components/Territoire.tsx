@@ -37,7 +37,7 @@ export default function Territoire() {
                     </p>
                     <Link
                         href="/en-construction"
-                        className="mt-2 self-start rounded-[32px] bg-ink px-6 py-4 text-lg text-white transition hover:bg-ink-600"
+                        className="mt-2 self-start rounded-[32px] bg-ink px-6 py-3 text-lg text-white transition hover:bg-ink-600"
                     >
                         Prendre contact
                     </Link>

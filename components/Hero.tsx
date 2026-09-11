@@ -42,11 +42,11 @@ export default function Hero() {
                 </p>
 
                 {/* Boutons CTA */}
-                <div className="flex flex-col sm:flex-row items-center gap-4 mt-2">
-                    <Link href="/en-construction" className="px-8 py-3 rounded-[32px] text-lg bg-ink text-white hover:bg-ink-600 transition">
+                <div className="flex flex-col min-[840px]:flex-row items-center justify-center gap-4 mt-2 w-full">
+                    <Link href="/en-construction" className="px-8 py-3 max-[650px]:w-full rounded-[32px] text-lg bg-ink text-white hover:bg-ink-600 transition">
                         Consulter les programmes de formation
                     </Link>
-                    <Link href="/en-construction" className="px-8 py-3 rounded-[32px] text-lg border border-ink text-ink hover:bg-ink hover:text-white transition">
+                    <Link href="/en-construction" className="px-8 py-3 max-[650px]:w-full rounded-[32px] text-lg border border-ink text-ink hover:bg-ink hover:text-white transition">
                         Prendre rendez-vous avec un conseiller
                     </Link>
                 </div>

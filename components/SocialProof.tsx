@@ -24,7 +24,7 @@ export default function SocialProof() {
                         </p>
                         <a
                             href="#formations"
-                            className="w-fit rounded-full bg-ink px-6 py-4 text-white transition duration-200 hover:bg-ink-600"
+                            className="w-fit rounded-full bg-ink px-6 py-3 text-white transition duration-200 hover:bg-ink-600"
                         >
                             Consulter les programmes de formation
                         </a>
